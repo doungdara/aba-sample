@@ -3312,6 +3312,9 @@ $(document).ready(function () {
 	$( "#invoke-faqs-kh" ).click(function() {
 	  $("#md_faq").css("display", "block");
 	});
+	$( "#google_maps" ).click(function() {
+	  $("#md_google_map").css("display", "block");
+	});
 	
 	/* Select Option with required payway custom  With Required*/
 	$('select.pw-custom').change(function () {
@@ -3366,26 +3369,26 @@ var LandingPage = (function () {
 			var first_click = true;
 			openLoading();
 
-			$.ajax({
-				dataType: 'json',
-				type: 'POST',
-				url: '/popup/do/branch-location/?L=' + GLOBAL_LANGUAGE,
-				data: {},
-				success: function (response) {
-					closeLoading();
-					window.neighborhoods = response;
+			// $.ajax({
+			// 	dataType: 'json',
+			// 	type: 'POST',
+			// 	url: '/popup/do/branch-location/?L=' + GLOBAL_LANGUAGE,
+			// 	data: {},
+			// 	success: function (response) {
+			// 		closeLoading();
+			// 		window.neighborhoods = response;
 
-					openModal('md_google_map');
-					if (first_click) {
-						initMap();
-						first_click = false;
-					}
-				},
-				error: function (error) {
-					console.log('Error Landing Page _googleMap function');
-				}
-			});
-			return false;
+			// 		openModal('md_google_map');
+			// 		if (first_click) {
+			// 			initMap();
+			// 			first_click = false;
+			// 		}
+			// 	},
+			// 	error: function (error) {
+			// 		console.log('Error Landing Page _googleMap function');
+			// 	}
+			// });
+			// return false;
 		});
 	};
 

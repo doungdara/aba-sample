@@ -15446,7 +15446,7 @@ ul.menu li a.bttn-register-now {
     padding-top: 60PX;
     padding-bottom: 30px;
     border: none;
-    background-color: rgba(55, 71, 79, 0.4);
+    background-color: rgba(55, 71, 79, 0.8);
 }
 
 .three-blog-cover.testimonial .thumbnail {
@@ -19651,13 +19651,14 @@ body,
     height: 100%;
 }
 
+
 #overview_animation {
     width: 100%;
     height: 100%;
     position: relative;
     background-color: black !important;
     background-blend-mode: screen !important;
-    background: url('/assets/img/homepage.png');
+    background: url('/assets/img/banner-2.jpg');
     background-size: cover;
 }
 
